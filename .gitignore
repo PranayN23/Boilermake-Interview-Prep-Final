@@ -4,6 +4,7 @@
 # Environment files
 .env
 backend/.env
+frontend/.env
 
 # Git itself
 .git
@@ -21,18 +22,17 @@ ai_models/temp
 __pycache__/
 *.pyc
 
-# Node.js (frontend)
+# Node.js dependencies
 node_modules/
 frontend/node_modules/
-frontend/.env
 
-# Logs (if any are created later)
+# Logs
 *.log
 
-# Optional: ignore Docker builds if you don’t want them versioned
+# Docker build files (optional)
 *.Dockerfile
 
-# Ignore IDE/editor configs
+# IDE/editor configs
 .vscode/
 .idea/
 *.swp
