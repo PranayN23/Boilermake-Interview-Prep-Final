@@ -5,6 +5,8 @@
 .env
 backend/.env
 
+venv/
+
 # Git itself
 .git
 

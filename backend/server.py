@@ -8,8 +8,9 @@ from bson import ObjectId
 
 from dotenv import load_dotenv
 import openai
+import fitz
 load_dotenv()
-OPEN_AI_API_KEY = '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'
+OPEN_AI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
 CORS(app)
@@ -93,7 +94,7 @@ def get_ai_feedback(question, transcript):
 
     Finish by giving a final score out of 40.
     """
-
+    print("finished transcript")
     try:
         response = openai.ChatCompletion.create(
             model="gpt-4",  # Use GPT-4 for better feedback (or use "gpt-3.5-turbo")
